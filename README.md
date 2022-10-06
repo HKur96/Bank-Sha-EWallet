@@ -1,16 +1,25 @@
 # new_bank_sha
 
-A new Flutter project.
+Aplikasi E - Wallet menggunakan state management BloC
 
-## Getting Started
+Berikut fitur yang tersedia di aplikasi ini :
+- Sign Up
+- Sign In
+- Update PIN
+- Update profile
+- Top Up Balance
+- Transfer
+- Pembelian Pulsa Data
 
-This project is a starting point for a Flutter application.
+* Perhatian
+* Ada beberapa fitur yang tidak berfungsi dikarenakan response Backend sedang error
+- Fitur Sign Up error
+- Fitur Friendly Tips empty
+- Fitur Transfer terkadang no response 
 
-A few resources to get you started if this is your first Flutter project:
+1. Jika Anda tidak dapat Sign Up Anda dapat Sign In menggunakan akun berikut :
+- email : hkur78@gmail.com
+- password : 12345678
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- email : angga@buildwithangga.com
+- password : rahasiakita
