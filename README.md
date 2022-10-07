@@ -24,6 +24,6 @@ Berikut fitur yang tersedia di aplikasi ini :
 
 Testing Pembayaran Top Up Anda bisa mengetes pembayaran menggunakan link berikut ini:
 
-BCA Virtual Account: https://simulator.sandbox.midtrans.com/bca/va/index
-BRI Virtual Account: https://simulator.sandbox.midtrans.com/bri/va/index
-BNI Virtual Account: https://simulator.sandbox.midtrans.com/bni/va/index
+- BCA Virtual Account: https://simulator.sandbox.midtrans.com/bca/va/index
+- BRI Virtual Account: https://simulator.sandbox.midtrans.com/bri/va/index
+- BNI Virtual Account: https://simulator.sandbox.midtrans.com/bni/va/index
