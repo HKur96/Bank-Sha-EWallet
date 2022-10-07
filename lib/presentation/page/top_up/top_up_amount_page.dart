@@ -90,7 +90,7 @@ class _TopUpAmountPageState extends State<TopUpAmountPage> {
                   await launchUrl(
                     url,
                     mode: LaunchMode.externalApplication,
-                  ).then((value) {
+                  ).then((_) {
                     
                     Navigator.pushNamedAndRemoveUntil(
                         context, TopUpSuccessPage.routeName, (route) => false);
