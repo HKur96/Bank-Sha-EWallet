@@ -80,23 +80,28 @@ class _TopUpAmountPageState extends State<TopUpAmountPage> {
                 AppMethod.showCustomSnackbar(context, state.e);
               }
 
-              if (state is TopUpSuccess) {
+             if (state is TopUpSuccess) {
                 /// state jika top up success,
+                /// dan akan dinavigasikan ke website midtrans
                 /// dan akan menjalankan event AuthUpdateBalance
                 /// untuk mengupdate balance di AuthSuccess
                 final url = Uri.parse(state.url);
                 try {
-                  await launchUrl(url);
-                  if (!mounted) return;
-                  context.read<AuthBloc>().add(
-                        AuthUpdateBalance(
-                          int.parse(
-                            _amountController.text.replaceAll('.', ''),
+                  await launchUrl(
+                    url,
+                    mode: LaunchMode.externalApplication,
+                  ).then((value) {
+                    
+                    Navigator.pushNamedAndRemoveUntil(
+                        context, TopUpSuccessPage.routeName, (route) => false);
+                    context.read<AuthBloc>().add(
+                          AuthUpdateBalance(
+                            int.parse(
+                              _amountController.text.replaceAll('.', ''),
+                            ),
                           ),
-                        ),
-                      );
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, TopUpSuccessPage.routeName, (route) => false);
+                        );
+                  });
                 } catch (e) {
                   AppMethod.showCustomSnackbar(context, e.toString());
                 }
