@@ -20,6 +20,10 @@ Berikut fitur yang tersedia di aplikasi ini :
 1. Jika Anda tidak dapat Sign Up Anda dapat Sign In menggunakan akun berikut :
 - email : hkur78@gmail.com
 - password : 12345678
+- pin : 111111
 
-- email : angga@buildwithangga.com
-- password : rahasiakita
+Testing Pembayaran Top Up Anda bisa mengetes pembayaran menggunakan link berikut ini:
+
+BCA Virtual Account: https://simulator.sandbox.midtrans.com/bca/va/index
+BRI Virtual Account: https://simulator.sandbox.midtrans.com/bri/va/index
+BNI Virtual Account: https://simulator.sandbox.midtrans.com/bni/va/index
